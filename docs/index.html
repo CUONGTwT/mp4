@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tặng cậu:))</title>
+    <style>
+        .mp4 {
+            display: none;
+            width: 100%;
+            height: auto
+        }
+        
+        .mp4.fi {
+            display: block;
+        }
+        
+        .bt.fi1 {
+            display: none;
+        }
+        
+        @media screen and (max-width:46.1875em) {
+            .mp4 {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                width: 360px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="bt">Click nao:))</button>
+    <video class="mp4" src="li.mp4" type="video/mp4"></video>
+    <script>
+        const mp4 = document.querySelector('.mp4')
+        const but = document.querySelector('.bt')
+        but.addEventListener('click', function() {
+            mp4.classList.add('fi')
+            mp4.play()
+            but.classList.add('fi1')
+        })
+    </script>
+</body>
+
+</html>
