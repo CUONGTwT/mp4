@@ -23,16 +23,19 @@
 
 <body>
     <button class="bt">Click nao:))</button>
-    <video class="mp4">
+    <video class="mp4" muted>
         <source src="okok.mp4" type="video/mp4">
     </video>
+    <audio class="mp3" src="li.mp3" type="audio/mp3"></audio>
     <script>
         const mp4 = document.querySelector('.mp4')
+        const mp3 = document.querySelector('.mp3')
         const but = document.querySelector('.bt')
         but.addEventListener('click', function() {
             mp4.classList.add('fi')
             mp4.play()
             but.classList.add('fi1')
+            mp3.play()
         })
     </script>
 </body>
