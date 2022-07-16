@@ -9,6 +9,8 @@
     <style>
         .mp4 {
             display: none;
+            width: 100%;
+            height: auto
         }
         
         .mp4.fi {
@@ -17,6 +19,15 @@
         
         .bt.fi1 {
             display: none;
+        }
+        
+        @media screen and (max-width:768px) {
+            .mp4 {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                width: 100%;
+            }
         }
     </style>
 </head>
